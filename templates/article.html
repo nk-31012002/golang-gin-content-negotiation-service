@@ -1,0 +1,11 @@
+<!--article.html-->
+{{ template "header.html" . }}
+
+  <article class="py-4">
+    <h1 class="display-5 fw-bold">{{ .payload.Title }}</h1>
+    <hr class="my-4">
+    <p class="fs-5">{{ .payload.Content }}</p>
+    <a href="/" class="btn btn-outline-secondary mt-3">&larr; Back to Articles</a>
+  </article>
+
+{{ template "footer.html" . }}
